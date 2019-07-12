@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html>
+<head>
+    <title>refresh.html</title>
+    <meta name="keywords" content="keyword1,keyword2,keyword3">
+    <meta name="description" content="this is my page">
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+    <!--<link rel="stylesheet" type="text/css" href="./styles.css">-->
+    <style>
+        #second{
+            color:red;
+        }
+    </style>
+    <script type="text/javascript">
+        window.onload=function()
+        {
+            var oSecond=document.getElementById("second");
+            //alert(oSecond);
+            time=5;
+            timer=setInterval(function(){//开户定时器
+                oSecond.innerHTML=time;
+                time--;
+                if(time==-1)
+                {
+                    clearInterval(timer);//关闭定时器
+                    window.location.href="http://www.baidu.com";//跳转到百度
+                }
+            },1000)
+        }
+    </script>
+</head>
+<body>
+当前页面在<span id="second">5</span>秒之后自动跳转到百度，如果没有跳转，请点击<a href="http://www.baidu.com">这里</a>
+</body>
+</html>

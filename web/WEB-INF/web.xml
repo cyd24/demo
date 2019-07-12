@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<display-name>10.Response</display-name>
+<servlet>
+    <servlet-name>Servlet1</servlet-name>
+    <servlet-class>com.jinke.direct.Servlet1</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>Servlet2</servlet-name>
+    <servlet-class>com.jinke.direct.Servlet2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>Servlet1</servlet-name>
+    <url-pattern>/servlet1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>Servlet2</servlet-name>
+    <url-pattern>/servlet2</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+</web-app>
+
+
+<!--
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+<display-name>9.ServletContext</display-name>
+<context-param>
+    <param-name>driver</param-name>
+    <param-value>com.mysql.jdbc.Driver</param-value>
+</context-param>
+<servlet>
+    <servlet-name>ServletContext1</servlet-name>
+    <servlet-class>com.jinke.servletContext.ServletContext1</servlet-class>
+</servlet>
+<servlet>
+    <servlet-name>ServletContext2</servlet-name>
+    <servlet-class>com.jinke.servletContext.ServletContext2</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>ServletContext1</servlet-name>
+    <url-pattern>/servletContext1</url-pattern>
+</servlet-mapping>
+<servlet-mapping>
+    <servlet-name>ServletContext2</servlet-name>
+    <url-pattern>/servletContext2</url-pattern>
+</servlet-mapping>
+<welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+</welcome-file-list>
+</web-app>-->
